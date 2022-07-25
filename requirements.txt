@@ -1,0 +1,5 @@
+pytorch
+timm
+torchvision
+skimage
+opencv-python

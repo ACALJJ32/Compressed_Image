@@ -11,18 +11,12 @@ from dataset import *
 
 parser = argparse.ArgumentParser(description="PyTorch QCN Demo")
 parser.add_argument("--cuda", default=False, help="use cuda?")
-# parser.add_argument("--model", default="weight/dqt_hinet/dqt_hinet_epoch14.pth", type=str, help="model path")
 parser.add_argument("--model", default="weight/dqt_hinet/dqt_hinet_flikr2k_p512_epoch57.pth", type=str, help="model path")
-
-# parser.add_argument("--realdatapath", default='/data1/AIM2022/LIVE1/jpeg_qf_10/live1/lq', type=str, help="test data path")
 parser.add_argument("--realdatapath", default='/data1/AIM2022/compress_image_track/image_val', type=str, help="test data path")
-
 parser.add_argument("--gpus", default="0", type=str, help="gpu ids (default: 0)")
 parser.add_argument("--GT", default=False, help="evaluate GT image dataset")
 parser.add_argument("--quality", default=10, type=int, help="JPEG quality when evaluating GT images")
-parser.add_argument("--save", default="div2k_image_val", type=str, help="save path")  # live1_hinet_patch256_flikr2k_epoch14
-# parser.add_argument("--save", default="live_hinet_patch512_flikr2k_epoch57", type=str, help="save path")  # live1_hinet_patch256_flikr2k_epoch14
-
+parser.add_argument("--save", default="div2k_image_val", type=str, help="save path") 
 parser.add_argument("--colorMode", default="RGB", type=str, help="L, RGB")
 
 

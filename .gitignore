@@ -1,5 +1,7 @@
 checkpoint/
 inputs/
 results/
-weight/
 work_dirs/
+
+
+*.pth
